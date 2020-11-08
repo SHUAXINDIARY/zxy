@@ -35,13 +35,21 @@ a:hover {
 .logodiv {
   text-align: center;
 }
-.logodiv img {
-  margin-bottom: 10px;
-}
 .titlex {
   font-size: 20px;
   font-weight: bold;
   margin-top: 30px;
+}
+.count {
+  font-size: 30px;
+}
+.count_day {
+  color: #6c63ff;
+  font-weight: bolder;
+  padding: 0 10px;
+}
+.cate {
+  margin-top: -10px;
 }
 .list {
   padding-left: 25px;
@@ -71,8 +79,7 @@ a:hover {
 .logot {
   font-weight: bold;
   font-size: 24px;
-  margin-top: -10px;
-  margin-bottom: -20px;
+  margin: 10px 0;
 }
 .logot .logo_1 {
   color: #888;
