@@ -15,6 +15,12 @@
     </span>
     天
   </div>
+  <!-- <div class="count">
+    认识的第
+    <span class="count_day" id="know">
+    </span>
+    天
+  </div> -->
 </div>
 <%- partial('_partial/nav') %>
 <div class="hd">
@@ -42,8 +48,18 @@
   <% }) %>
 </div>
 <script>
-  const count = document.querySelector('#count')
-  let day = Math.ceil((new Date() - new Date('2020-11-01')) / (1000 * 60 * 60 * 24))
-  count.textContent = day
-  console.log(`倒计时${day}`)
+  // 在一起计时器
+  const countLoveDay = () => {
+    const count = document.querySelector('#count')
+    let day = Math.ceil((new Date() - new Date('2020-11-01')) / (1000 * 60 * 60 * 24))
+    count.textContent = day
+  }
+  // 相识计时器
+  const countKnowDay = () => {
+    const count = document.querySelector('#know')
+    let day = Math.ceil((new Date() - new Date('2018-08-11')) / (1000 * 60 * 60 * 24))
+    count.textContent = day
+  }
+  // countKnowDay();
+  countLoveDay();
 </script>
