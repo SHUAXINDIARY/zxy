@@ -26,6 +26,7 @@
     <div class="post-title">
         <p>
             一起去过的地方
+            
         </p>
         <hr>
     </div>
@@ -66,6 +67,18 @@
 
     
 </div>
+<script>
+    // 相识计时器
+    const countKnowDay = () => {
+        const count = document.querySelector('#know')
+        if (count) {
+            let day = Math.ceil((new Date() - new Date('2018-08-11')) / (1000 * 60 * 60 * 24))
+            count.textContent = day
+        }
+
+    }
+    countKnowDay()
+</script>
     <div class="footer" id="footer">
     <p>Copyright © 2020 <a class="flink" target="_blank" rel="noopener" href="https://hexo.io">HEXO</a>-
         <a href="https://blog.shuaxinjs.cn">SHUAXIN</a>
